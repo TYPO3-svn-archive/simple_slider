@@ -11,6 +11,14 @@
 				</TCEforms>
 				<type>array</type>
 				<el>
+					<templateFile>
+						<TCEforms>
+							<label>LLL:EXT:simple_slider/locallang.xml:ff_templateFile</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</templateFile>
 					<animation>
 						<TCEforms>
 							<label>LLL:EXT:simple_slider/locallang.xml:ff_animation</label>

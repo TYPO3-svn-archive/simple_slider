@@ -106,6 +106,8 @@ class tx_simpleslider_pi1 extends tslib_pibase {
 		$templateFile = 'EXT:simple_slider/templates/default.html';
 		if (strlen($this->conf['templateFile']) > 0)
 			$templateFile = $this->conf['templateFile'];
+		if (strlen(trim($this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'templateFile', 'sDEF'))) > 0)
+			$templateFile = trim($this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'templateFile', 'sDEF'));
 		$template = $this->cObj->fileResource($templateFile);
 
 		$tmplSlider = $this->cObj->getSubpart($template, '###TEMPLATE_SLIDER###');
